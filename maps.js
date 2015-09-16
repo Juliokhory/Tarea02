@@ -24,8 +24,6 @@ infowindow.open(mapa,marca1);}
 //Dispara accion al dar un clic en el marcador
 google.maps.event.addListener(marca1, 'click', MostrarInfo);
 
-
-
 var casa = new google.maps.LatLng(-17.394803, -66.138385);
 var marca2 = new google.maps.Marker({
         position: casa,
