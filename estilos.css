@@ -25,31 +25,29 @@ img{
 }
 
 .content-charts{
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     background-color: #323232;
-    width: 1200px;
-    height: 1878px;
-    overflow: hidden;
-    border-radius: 50px;
 }
 
 #chart_div {
     width:400px;
     height: 278px;
-    /*right: 200px;*/
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 #table_div {
     width:400px;
     height: 278px;
     background-color: #577889;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 #combo_div {
     width:800px;
     height: 278px;
     background-color: #577889;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 #regions_div{
     width:550px;

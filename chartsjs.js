@@ -1,5 +1,7 @@
+//Me cargo los paquetes a usar
 google.load('visualization', '1.0', {'packages':['corechart','geochart','table']});
 
+//esta parte no entiendo
 google.setOnLoadCallback(drawChart);
 google.setOnLoadCallback(drawTable);
 google.setOnLoadCallback(drawVisualization);
