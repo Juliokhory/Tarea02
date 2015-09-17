@@ -1,14 +1,14 @@
 //Me cargo los paquetes a usar
 google.load('visualization', '1.0', {'packages':['corechart','geochart','table']});
 
-//esta parte no entiendo
-google.setOnLoadCallback(drawChart);
-google.setOnLoadCallback(drawTable);
-google.setOnLoadCallback(drawVisualization);
-google.setOnLoadCallback(drawRegionsMap);
+//esta parte no entiendo (ya entendi)
+google.setOnLoadCallback(diagrama_pizza);
+google.setOnLoadCallback(diagrama_tabla);
+google.setOnLoadCallback(diagrama_barras);
+google.setOnLoadCallback(diagrama_mapa);
 
 //Tipo Pizza
-function drawChart() {
+function diagrama_pizza() {
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
@@ -21,13 +21,22 @@ function drawChart() {
                       ['chuleta', 1]
                     ]);
 
-        var options = {'title':'Diagramita tipo pizza'};
+        // var options = {'title':'Diagramita tipo pizza'};
+        var options = {
+          'legend':'right',
+          'title':'My Big Pie Chart',
+          'is3D':true,
+          'width':400,
+          'height':300
+        }
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
+        var chart2 = new google.visualization.BarChart(document.getElementById('barrass_div'));
+        chart2.draw(data, options);
     }
 
 //Tipo Barras
-function drawTable() {
+function diagrama_tabla() {
         var data_table = new google.visualization.DataTable();
         data_table.addColumn('string', 'Name');
         data_table.addColumn('number', 'Salary');
@@ -46,7 +55,7 @@ function drawTable() {
     }
 
 //Tipo Barritas
-function drawVisualization() {
+function diagrama_barras() {
     var data_combo = google.visualization.arrayToDataTable([
         ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Rwanda', 'Average'],
         ['2004/05',  165,      938,         522,         450,      614.6],
@@ -67,7 +76,7 @@ function drawVisualization() {
 }
 
 //Tipo Mapita
-function drawRegionsMap() {
+function diagrama_mapa() {
     var datamap = google.visualization.arrayToDataTable([
         ['Country', 'Popularity'],
         ['Germany', 200],

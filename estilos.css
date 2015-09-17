@@ -2,6 +2,7 @@ body{
     margin: 0 auto;
     max-width: 1000px;
     background-color:  #545454;
+    text-align:  center;
 }
 
 .menu{
@@ -11,13 +12,12 @@ body{
     background: #563254;
 }
 
+a{
+    color: red;
+}
 .menu a{
     margin: 1rem;
     color: white;
-}
-
-a{
-    color: red;
 }
 
 img{
@@ -27,9 +27,16 @@ img{
 .content-charts{
     margin: 0 auto;
     background-color: #323232;
+
 }
 
 #chart_div {
+    width:400px;
+    height: 278px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+#barrass_div{
     width:400px;
     height: 278px;
     margin: 0 auto;
@@ -59,4 +66,7 @@ img{
 #mapa{
     width: 700px;
     height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
 }
